@@ -43,7 +43,7 @@
 
 ### A few things...
 
-1. The reason I chose such an elaborate setup for such a seemingly simple app is because I realized that I could eventually use this as a replacement for Google images. It would allow for me to have better control over my own pictures, as well as a bigger storage space. As such, I built this setup with the intent to continue development past the scope of this internship application.
+1. The reason I chose such an elaborate setup for such a seemingly simple app is because I realized that I could eventually use this as a replacement for Google images. It would allow for me to have better control over my own pictures, as well as a bigger storage space. Basically I built it so I coudl keep working on it.
 
 2. I built a multi-label neural network classifier for this app's image content recognition feature (it was more fun than just getting one off the internet). However, I grossly overestimated the capabilities of my computer when it came to training. Had to severely downsize just about everything. Even then, the performance is quite poor: 60% accuracy on 13 labels. 13 different classifiers, each handling one label, trained on specialized datasets, would likely yield far better results, but that's not really scallable. So, I kept the single model setup. I'm confident that, given time to obtain more computing power, I will enventually get it to where my overconfidence first thought it would go (decent accuracy at 600 labels). 
 
