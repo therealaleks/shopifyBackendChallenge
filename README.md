@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/therealaleks/shopifyBackendChallenge">
-    <img src="images/upload.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Simple Image Repo</h3>
@@ -41,13 +41,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![SIR Screen Shot][product-screenshot]](images/screenshot.png)
+![SIR Screen Shot](images/screenshot.png)
+
+### Notes
+
+Stay tuned for some important notes
 
 ### Built With
 
 * [ReactJs](https://reactjs.org/)
 * [Django](https://www.djangoproject.com/)
 * [Node.Js](https://nodejs.org/en/)
+
+
 
 <!-- GETTING STARTED -->
 ## Getting Started
