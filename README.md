@@ -48,8 +48,6 @@
     https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations\
     (download the s3://open-images-dataset/tar/train_f.tar.gz one)
     Then get the labels from https://storage.googleapis.com/openimages/web/download_v4.html (the 600 label one)
-    
-4. I didn't really see the point of search based on filename or given title. Who remembers the file names of their pictures?
 
 USAGE INSTRUCTIONS:
 
