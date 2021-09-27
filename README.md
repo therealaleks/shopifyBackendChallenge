@@ -48,13 +48,15 @@
     https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations\
     (download the s3://open-images-dataset/tar/train_f.tar.gz one)
     Then get the labels from https://storage.googleapis.com/openimages/web/download_v4.html (the 600 label one)
+   
+ 4. The image search works by computing a difference hash for each picture. The hash consists of 64 bits, 1 bit for every horizontally adjacent pair of pixels in the 9x8 resized greyscale version of the image being hashed. 0 means the LHS pixel is darker than the RHS one, 1 means its lighter. Then, image searching simply matches the hashes, while tolerating a hamming distance of at most 10. 
 
 USAGE INSTRUCTIONS:
 
 1. App should be loaded up with default pictures
 2. You can choose a file in your computer by clicking on the big upload icon
 3. You can now choose to either upload the image to the repo, by clicking upload
-4. Or search for variations of that image in the repo by clicking search. This should update the listed pictures with the results, if any. Click on the big refresh to start over.
+4. Or search for variations of that image already in the repo by clicking search. This should update the listed pictures with the results, if any. Click on the big refresh to start over.
 6. Selecting a keyword in the dropdown should filter the pictures according to what the server thinks are in those pictures
 7. Hovering over an image will reveal what the app thinks its contents is
 8. The content filters person, man, building, tree work best. 
