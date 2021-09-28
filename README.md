@@ -42,7 +42,7 @@
 
 1. The reason I chose such an elaborate setup for such a seemingly simple app is because I realized that I could eventually use this as a replacement for Google images. It would allow for increased privacy, as well as a bigger storage space. I plan on developing it much further.
 
-2. I trained a multi-label neural network classifier for this app's image content recognition feature (it was more fun than just getting one off the internet). However, I grossly overestimated the capacity of my computer when it came to training. Had to severely downsize just about everything. I went from 600 labels to 13 labels. Ironically, the dataset for 600 became unfit for 13. It was a huuge time sink and the performance is still quite poor: 60% accuracy on 13 labels. 13 different classifiers, each handling one label, trained on specialized datasets, would likely yield far better results, but that's not really scallable. So, I kept the single model setup. I'm confident that, given time to obtain more computing power, I will enventually get it to where my overconfidence first thought it would go (decent accuracy at 600 labels). 
+2. I trained a multi-label neural network classifier for this app's image content recognition feature (it was more fun than just getting one off the internet). However, I grossly overestimated the capacity of my computer when it came to training. Had to severely downsize just about everything. I went from 600 labels to 13 labels. Ironically, the dataset for 600 became unfit for 13. It was a huuge time sink and the performance is still quite poor: 60% accuracy on 13 labels. A costum dataset was then in order, though I didn't quite have enough time for that. However, I'm confident that after I obtain more computing power and cobble together a proper dataset, I will enventually get the model to where my overconfidence first thought it would go (decent accuracy at 600 labels). 
 
 3. I left all the ML stuff in the shopifyChallenge/imageRepo/classifierScripts/ folder. If you want to try out the data processing scripts in there, here's where to download the data
     https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations\
@@ -82,6 +82,7 @@ PLANNED FEATURES:
 8. Video recognition
 9. Perhaps a prettier UI
 10. Routing on the clientside
+11. Image editing tools
 
 ### Built With
 
@@ -106,11 +107,11 @@ To get a local copy up and running follow these simple steps.
 
 First clone the repo and get into the shopifyBackendChallenge/ directory (the same one as this readme)
 
-1. Start server and install server dependencies
+1. To install server dependencies and start server,
    ```sh
    ./startServer.sh
    ```
-2. Start client and install client dependencies
+2. To install client dependencies and start client,
    ```sh
    ./startClient.sh
    ```
